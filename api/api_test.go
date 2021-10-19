@@ -9,7 +9,7 @@ import (
 func TestCreate(t *testing.T) {
 	field := common.Field{Name: "id", Value: 0}
 	record := common.Record([]common.Field{field})
-	table := common.Table{Name: "test", Record: record}
+	table := common.Table{Name: "test", Records: []common.Record{record}}
 	error := Create(table)
 	if error != nil {
 		t.Error(error)

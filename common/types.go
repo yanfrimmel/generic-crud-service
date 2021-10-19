@@ -4,8 +4,8 @@ type Record []Field
 
 //Table in the database
 type Table struct {
-	Name   string
-	Record Record
+	Name    string
+	Records []Record
 }
 
 // Field has a name a value
